@@ -3,10 +3,6 @@ from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QApplication
 
 
-
-letra1="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-letra2="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-letra3="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 class ejemplo(QMainWindow):
     def __init__(self):
         super().__init__()
