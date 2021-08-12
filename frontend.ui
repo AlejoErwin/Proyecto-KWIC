@@ -151,7 +151,7 @@
        <string/>
       </property>
      </widget>
-     <widget class="QLineEdit" name="claveDC2">
+     <widget class="QLineEdit" name="pal1">
       <property name="geometry">
        <rect>
         <x>290</x>
