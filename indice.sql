@@ -7,61 +7,62 @@
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 8.0.3
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Base de datos: `indice`
 --
 
 -- --------------------------------------------------------
+-- Created by Vertabelo (http://vertabelo.com)
+-- Last modification date: 2021-08-12 21:18:15.261
 
+-- tables
+-- Table: context
 --
 -- Estructura de tabla para la tabla `context`
 --
 
 CREATE TABLE `context` (
-  `id` int(11) NOT NULL,
-  `titulo` varchar(500) NOT NULL,
-  `autor` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+    id int NOT NULL AUTO_INCREMENT,
+    titulo varchar(500) NOT NULL,
+    autores varchar(300) NOT NULL,
+    año_pub int NOT NULL,
+    CONSTRAINT context_pk PRIMARY KEY (id)
+);
+-- End of file.
 
 --
--- Volcado de datos para la tabla `context`
+-- Insert de datos para la tabla `context`
 --
 
-INSERT INTO `context` (`id`, `titulo`, `autor`) VALUES
-(1, 'Holas', 'Funciona'),
-(2, 'si funciona', 'Siiiii xd :D');
-
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `context`
---
-ALTER TABLE `context`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `context`
---
-ALTER TABLE `context`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+INSERT INTO context VALUES
+(1,'Teoria General de Sistemas: un enfoque hacia la ingenieria de sistemas 2Ed.','Carmona\, D. H.',2011),
+(2,'Teleinformática para ingenieros en sistemas de información. II (Vol. 2).','Antonio Ricardo Castro Lechtaler\, Rubén Jorge Fusario',1999),
+(3,'Diseño de sistemas interactivos centrados en el usuario','Toni Granollers i Saltiveri\, Jesús Lorés Vidal\, José Juan Cañas Delgado',2011),
+(4,'Ingenieria y Arquitectura del Software','Alicia Durango y Angel Arias',2016),
+(5,'Introducción a Los Patrones de Diseño: Un Enfoque Práctico','Oscar J. Iturralde',2016),
+(6,'Análisis y diseño de sistemas','Kenneth E. Kendall\, ?Julie E. Kendall',2005),
+(7,'El Proceso de Desarrollo de Software: 2ª Edición','Raúl Noriega Martinez',2017),
+(8,'Curso de Programación y Análisis de Software - Tercera Edición','Alicia Durango\, ?Ángel Arias',2018),
+(9,'Curso de Programación y Análisis de Software Integrado','Ángel Arias\, ?Alicia Durango',2016),
+(10,'Introduccion a la segurudad informatica y el analisis de vulnerabilidad','Martha Irene Romero Castro\, ?Grace Liliana Figueroa Morán',2018),
+(11,'Arquitectura limpia: guia para especialistas en la estructura y el diseño de software','Robert C. Martin\, James Grenning',2018),
+(12,'Microservicios Un enfoque integrado','David Roldán Martinez',2018),
+(13,'Software Architecture in Practice','Len Bass\, Paul Clements\, Rick Kazman',1997),
+(14,'Fundamentals of Software Architecture: An Engineering Approach','Mark Richards\, Neal Ford',2020),
+(15,'Building Evolutionary Architectures ','Rebecca Parsons',2017),
+(16,'Sustainable Software Architecture: Analyze and Reduce Technical Debt','Carola Lilienthal',2019),
+(17,'Clean Architecture: A Craftsman''s Guide to Software Structure and Design','Robert C. Martin',2017),
+(18,'Arquitectura del Software (Spanish Edition)','Angel Arias',2017),
+(19,'Software Systems Architecture: Working With Stakeholders Using Viewpoints and Perspectives','Eoin Woods',2005),
+(20,'Front-End Reactive Architectures','Luca Mezzalira',2018),
+(21,'Software Architect''s Handbook','Joseph Ingeno ',2018),
+(22,'Designing object-oriented software','Rebecca Wirfs-Brock',1990),
+(23,'Designing software architectures a practical approach','Humberto Cervantes',2016),
+(24,'Just Enough Software Architecture: A Risk-driven Approach','George Fairbanks',2010),
+(25,'The Process of Software Architecting','Peter Eeles',2009),
+(26,'Beyond Software Architecture','Kluke Hohmann',2003),
+(27,'Implementing Domain Driven Design','Vaughn Vernon',2013),
+(28,'12 Essential Skills for Software Architects','Dave Hendricksen',2011),
+(29,'97 Things Every Software Architect Should Know','Richard Monson-Haefel',2009),
+(30,'Software Architecture: Foundations\, Theory\, and Practice','Richard N. Taylor',2008);
