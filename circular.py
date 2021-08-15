@@ -22,8 +22,8 @@ def dividir(word,palabra):
     a = "".join(palabra)
     a = a.split()
     v = []
-    print(word, " ddddddddd")
-    print(a, " eeeeeeeeee")
+    print(word)
+    print(a)
     for j in word:
         b = False
         con = ""

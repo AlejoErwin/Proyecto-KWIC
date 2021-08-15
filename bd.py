@@ -18,3 +18,12 @@ class DataBase:
         except Exception as e:
             raise
         return user
+
+    def select_table(self):
+        sql= 'SELECT id,titulo,autores,año_pub FROM context'
+        try:
+            self.cursor.execute(sql)
+            user = self.cursor.fetchall()
+        except Exception as e:
+            raise
+        return user

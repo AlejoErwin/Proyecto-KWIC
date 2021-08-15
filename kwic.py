@@ -16,7 +16,13 @@ class ejemplo(QMainWindow):
         self.tableWidget.setColumnWidth(0,514)
         self.tableWidget.setColumnWidth(1,150)
         self.tableWidget.setColumnWidth(2,514)
+        # libros
+        self.tableLibro.setColumnWidth(0, 0)
+        self.tableLibro.setColumnWidth(1, 460)
+        self.tableLibro.setColumnWidth(2, 460)
+        self.tableLibro.setColumnWidth(3, 200)
         self.data()
+        self.table()
         self.boton_buscar.clicked.connect(self.fencriptarC)
         self.boton_convertir.clicked.connect(self.loaddata)
     def data(self):
@@ -27,7 +33,21 @@ class ejemplo(QMainWindow):
             for i in vecs:
                 libros.append(i)
                 self.listWidget.addItem(i)
-
+    def table(self):
+        database = DataBase()
+        vec=database.select_table()
+        e=0
+        self.tableLibro.setRowCount(len(vec))
+        print("comoscevc ",len(vec))
+        for i in vec:
+            c=0
+            for j in i:
+                item = QTableWidgetItem(str(j))
+                item.setTextAlignment(QtCore.Qt.AlignLeft)
+                self.tableLibro.setItem(e, c, item)
+                print(j, "   ",e,c)
+                c+=1
+            e+=1
     def loaddata(self):
         items = self.listWidget.selectedItems()
         selected = []
