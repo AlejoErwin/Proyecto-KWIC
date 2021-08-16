@@ -1,11 +1,12 @@
 def eliminar(palabra):
-    v=["2ª","las","los","con","como","que","no","lo","en","de","la","y","al","el","o","a","por","tu","si","-","1","2","3","del"]
+    v=["2ª","las","los","con","como","que","no","lo","en","de","la","y","al","el","o","a","por","tu","si","-","1","2","3","del","Los","El","La","Una","Un","Uso","En","Las","Los","los","Del"]
     a = "".join(palabra)
     a = a.split()
     print(len(a))
     i=0
     while i<len(a):
-        if a[i] in v:
+        c=a[i].lower()
+        if c in v:
             a.pop(i)
             i-=1
         i+=1
