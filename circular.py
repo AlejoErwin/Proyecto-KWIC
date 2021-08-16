@@ -1,5 +1,5 @@
 def eliminar(palabra):
-    v=["2ª","las","los","con","como","que","no","lo","en","de","la","y","al","el","o","a","por","tu","si","-","1","2","3"]
+    v=["2ª","las","los","con","como","que","no","lo","en","de","la","y","al","el","o","a","por","tu","si","-","1","2","3","del"]
     a = "".join(palabra)
     a = a.split()
     print(len(a))

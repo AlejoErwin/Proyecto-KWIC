@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a6969f5-d652-470d-aa2b-51ae21cc51bf" name="Default Changelist" comment="se logro insertar la busqueda y convertir de Kwic">
+    <list default="true" id="6a6969f5-d652-470d-aa2b-51ae21cc51bf" name="Default Changelist" comment="se creo la tabla de los libros">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bd.py" beforeDir="false" afterPath="$PROJECT_DIR$/bd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/circular.py" beforeDir="false" afterPath="$PROJECT_DIR$/circular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend.ui" beforeDir="false" afterPath="$PROJECT_DIR$/frontend.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kwic.py" beforeDir="false" afterPath="$PROJECT_DIR$/kwic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +180,8 @@
       <workItem from="1629003688942" duration="3062000" />
       <workItem from="1629007040947" duration="29000" />
       <workItem from="1629007078515" duration="273000" />
+      <workItem from="1629007363004" duration="81000" />
+      <workItem from="1629126771002" duration="1380000" />
     </task>
     <task id="LOCAL-00001" summary="Se añadio las librerias">
       <created>1628643728697</created>
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628991317088</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="se creo la tabla de los libros">
+      <created>1629007402995</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1629007402995</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,12 +257,13 @@
     <MESSAGE value="se subio la base de datos" />
     <MESSAGE value="se creo la funcion de circular" />
     <MESSAGE value="se logro insertar la busqueda y convertir de Kwic" />
-    <option name="LAST_COMMIT_MESSAGE" value="se logro insertar la busqueda y convertir de Kwic" />
+    <MESSAGE value="se creo la tabla de los libros" />
+    <option name="LAST_COMMIT_MESSAGE" value="se creo la tabla de los libros" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Proyecto_KWIC$alfabetizador.coverage" NAME="alfabetizador Coverage Results" MODIFIED="1628989145569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_KWIC$bd.coverage" NAME="bd Coverage Results" MODIFIED="1628778780457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Proyecto_KWIC$kwic__1_.coverage" NAME="kwic (1) Coverage Results" MODIFIED="1629007340266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Proyecto_KWIC$kwic__1_.coverage" NAME="kwic (1) Coverage Results" MODIFIED="1629127349368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_KWIC$circular.coverage" NAME="circular Coverage Results" MODIFIED="1628783110171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_KWIC$kwic.coverage" NAME="kwic Coverage Results" MODIFIED="1628643675601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/Python39" />
     <SUITE FILE_PATH="coverage/Proyecto_KWIC$circular__1_.coverage" NAME="circular (1) Coverage Results" MODIFIED="1628986148177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
